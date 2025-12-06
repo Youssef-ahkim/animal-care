@@ -42,9 +42,9 @@ const Nav = () => {
 
                 {/* 3. RIGHT: Desktop CTA */}
                 <div className="hidden md:block shrink-0">
-                    <button className='cursor-pointer bg-[#FF9F1C] text-white font-extrabold px-8 py-3 rounded-full shadow-md hover:bg-orange-500 hover:shadow-lg transition-colors duration-200 lowercase text-lg'>
+                    <Link href="/pets" className='cursor-pointer bg-[#FF9F1C] text-white font-extrabold px-8 py-3 rounded-full shadow-md hover:bg-orange-500 hover:shadow-lg transition-colors duration-200 lowercase text-lg'>
                         find a friend
-                    </button>
+                    </Link>
                 </div>
 
                 {/* MOBILE: Hamburger Icon */}
@@ -85,9 +85,9 @@ const Nav = () => {
                     </ul>
 
                     {/* Mobile CTA */}
-                    <button className='cursor-pointer bg-[#FF9F1C] text-white font-extrabold px-8 py-3 rounded-full shadow-md active:bg-orange-500 transition-colors lowercase text-lg w-[80%]'>
+                    <Link href="/pets" className='cursor-pointer bg-[#FF9F1C] text-white font-extrabold px-8 py-3 rounded-full shadow-md active:bg-orange-500 transition-colors lowercase text-lg w-[80%]'>
                         find a friend
-                    </button>
+                    </Link>
                 </div>
             </div>
 

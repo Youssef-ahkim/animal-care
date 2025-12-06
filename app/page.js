@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useRef, useEffect, useState } from 'react'
 
 // ==========================================
@@ -82,10 +83,10 @@ const HeroPremium = () => {
             {/* 4. Action Area */}
             <div className="flex flex-col sm:flex-row items-center gap-8 w-full opacity-0 animate-[fade-up_0.8s_ease-out_forwards_500ms]">
                 <button className='cursor-pointer relative overflow-hidden group bg-[#2d2d2d] text-white font-bold text-lg px-10 py-5 rounded-full shadow-2xl hover:scale-105 transition-all duration-300'>
-                    <span className="relative z-10 flex items-center gap-2">
+                    <Link href="/pets" className="relative z-10 flex items-center gap-2">
                         Start Adoption
                         <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                    </span>
+                    </Link>
                     <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-12" />
                 </button>
 
