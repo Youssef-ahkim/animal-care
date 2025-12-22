@@ -10,7 +10,7 @@ const pets = [
 
 // 1. ADD 'async' HERE
 const PetDetailsPage = async ({ params }) => {
-    
+
     // 2. ADD 'await' HERE
     // In Next.js 15+, params is a Promise. You must resolve it before reading properties.
     const resolvedParams = await params
@@ -31,14 +31,14 @@ const PetDetailsPage = async ({ params }) => {
 
     return (
         <div className="min-h-screen  py-20 px-6 flex justify-center items-center">
-            <div className="max-w-5xl w-full bg-white rounded-[40px] shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 animate-[fade-up_0.5s_ease-out]">
-                
+            <div className="max-w-5xl w-full bg-white rounded-[40px] shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 animate-[fade-up_0.5s_ease-out] will-change-transform">
+
                 {/* Left: Image */}
                 <div className="relative h-[400px] md:h-auto bg-gray-100">
-                    <Image 
-                        src={pet.image} 
-                        alt={pet.name} 
-                        fill 
+                    <Image
+                        src={pet.image}
+                        alt={pet.name}
+                        fill
                         className="object-cover"
                     />
                 </div>
