@@ -9,8 +9,9 @@ body {
   background-image: url("/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
+  /* Remove fixed on mobile */
+  background-attachment: scroll;
 }
 
 
